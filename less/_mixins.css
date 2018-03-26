@@ -1,0 +1,31 @@
+img.vertical-fix {
+  display: inline !important;
+  width: 0 !important;
+  height: 100% !important;
+  font-size: 0 !important;
+  opacity: 0 !important;
+}
+.vc {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.centered-wrapper {
+  display: table;
+  table-layout: fixed;
+}
+.centered-unit {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+/*hover,focus,active*/
+/*END hover,focus,active*/
+/*Filter Blur*/
+/*Transition*/
+/*END Transition*/
+/*Border radius*/
+/*End border radius*/

@@ -1,0 +1,76 @@
+@import "_variables";//TODO temp
+
+.path-response {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__wrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    &_absolute {
+      position: absolute;
+      outline: 1px solid green;
+    }
+
+    &_dot-2 {
+      width: 13%;
+      height: ~'calc(100% - 60px)';
+      left: 60px;
+    }
+
+  }
+
+  &__container {
+    position: relative;
+    height: 0;
+    padding-bottom: 300px;
+
+    svg {
+      position: absolute;
+      display: block;
+      path {
+      }
+    }
+
+    &_header {
+      padding-bottom: @header__dots-wrap--height; //120
+      margin-left: -50%;
+      width: 159%;
+    }
+
+
+    &_potential {
+      padding-bottom: @potential__dots-wrap--height; //183px
+      width: 200%;
+      height: 150%;
+      margin-left: -90%;
+    }
+
+    &_potential-bottom {
+      padding-bottom: @potential__bottom-dots-wrap--height; //201px
+    }
+    &_main-list {
+      padding-bottom: @main-list__dots-wrap--height; //85px
+
+      &_big {
+        padding-bottom: @main-list__big-dots-wrap--height; //200px
+      }
+    }
+
+    &_footer {
+      padding-bottom:@footer__dots-wrap--height;//235px
+    }
+
+    &_footer-form {
+      padding-bottom:@footer-form__dots-wrap--height;//60px
+    }
+  }
+}
+
+

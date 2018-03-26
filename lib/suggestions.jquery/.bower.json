@@ -1,0 +1,13 @@
+{
+  "name": "suggestions.jquery",
+  "homepage": "https://github.com/hflabs/suggestions-jquery",
+  "_release": "a261987c57",
+  "_resolution": {
+    "type": "branch",
+    "branch": "16.6",
+    "commit": "a261987c574b8f12855c211146f52ee24c1e4d27"
+  },
+  "_source": "https://github.com/hflabs/suggestions-jquery.git",
+  "_target": "16.6",
+  "_originalSource": "suggestions.jquery"
+}

@@ -1,0 +1,631 @@
+@import "_variables"; //TODO temp
+
+.vtb-landing {
+
+	//lg -- template 1920 -- res.1200+
+	@media (max-width: 1200px) {
+
+		.main-list {
+			.list-item {
+
+				&__picture-wrap {
+					width: 160px;
+				}
+			}
+		}
+	}
+
+	//md -- template 1200 -- res.1199 - 992
+	@media (max-width: 1199px) {
+		@header-dots-height-1199: 65px;
+
+		.h1-title {
+			font-size: 49px;
+		}
+
+		.title-stripe {
+			margin-top: 0;
+			margin-bottom: 5px;
+		}
+
+		.header {
+
+			&__dots-wrap {
+				height: @header-dots-height-1199;
+			}
+		}
+
+		.potential {
+
+			&__circle-wrap {
+				bottom: -15%;
+				left: -3.5%;
+			}
+		}
+
+		.partners {
+			margin-bottom: 15px;
+		}
+
+		.appeal {
+			margin-top: 0;
+		}
+
+		.main-list {
+
+			.list-item {
+
+				&__description {
+					padding-left: 0;
+				}
+			}
+		}
+
+		.footer {
+
+			&__form {
+				margin-top: 81px;
+			}
+
+			&__title {
+				margin-bottom: 25px;
+			}
+
+			&__card {
+				max-width: 100%
+			}
+		}
+
+		.path-response {
+
+			&__container {
+
+				&_header {
+					padding-bottom: @header-dots-height-1199; //65
+					margin-left: -26%;
+					width: 124%;
+				}
+
+				&_potential {
+					width: 255%;
+					margin-left: -120%;
+				}
+			}
+		}
+	}
+
+	//sm -- template 768  -- res. 991-
+	@media (max-width: 991px) {
+
+		.hide_991 {
+			display: none;
+		}
+
+		.show_991 {
+			display: initial;
+		}
+
+		.dots-container {
+
+			&_hidden-991 {
+				display: none;
+			}
+		}
+
+		.left-stripe {
+			padding-left: 12px;
+		}
+
+		.marked {
+
+			&_lightblue {
+
+				&_991-show {
+					background-color: #559aff;
+					line-height: 1.1;
+				}
+
+				&_991-hide {
+					background-color: transparent;
+				}
+			}
+		}
+
+		.h1-title {
+			font-size: 46px;
+			line-height: 1;
+		}
+
+		.h2-title {
+			font-size: 40px;
+			line-height: 1;
+		}
+
+		.title-stripe {
+			display: inline-block;
+			width: 43px;
+			height: 3px;
+			margin-top: 14px;
+			margin-bottom: 7px;
+
+			&_lightblue {
+				height: 3px;
+			}
+		}
+
+		.header {
+			height: initial;
+			padding-top: 37px;
+			background: url('../img/images/vtb/bg-991.png') center no-repeat;
+			background-size: cover;
+			text-align: center;
+
+			&__content {
+
+			}
+
+			&__title {
+				font-size: 46px;
+			}
+
+			&__subtitle {
+				font-size: 30px;
+				line-height: 1.2;
+				text-align: left;
+			}
+
+			&__slogan {
+				margin-bottom: 25px;
+				font-size: 24px;
+			}
+
+			&__card {
+				margin-top: 0;
+			}
+		}
+
+		.card-top {
+			display: inline-block;
+			max-width: 296px;
+
+			&__img {
+
+			}
+
+			&__icon-wrap {
+				width: 112px;
+				height: 112px;
+			}
+		}
+
+		.potential {
+			padding-top: 41px;
+
+			&__title {
+				margin-bottom: 27px;
+			}
+
+			&__subtitle {
+				margin-bottom: 67px;
+				font-size: 24px;
+				line-height: 1.17;
+			}
+
+			&__description {
+				display: none;
+
+				&_small {
+					display: block;
+					font-size: 20px;
+					line-height: 1.3;
+				}
+			}
+
+			&__img-wrap {
+				margin-bottom: 55px;
+				max-width: 80%;
+				float: none;
+			}
+		}
+
+		.ecosystem {
+			margin-bottom: 0;
+			text-align: center;
+
+			&__title {
+				margin-bottom: 34px;
+				margin-top: 150px;
+			}
+
+			&__subtitle {
+				font-size: 22px;
+				line-height: 1.41;
+			}
+		}
+
+		.main-list {
+
+			&__item {
+
+			}
+
+			&__dots-wrap {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			&__dots-path {
+				d: path('M 50 1 L 50 99');
+			}
+
+			.list-item {
+
+				&__picture-wrap {
+					display: inline-block;
+				}
+
+				&__picture {
+					height: 130px;
+				}
+
+				&__title {
+					margin-bottom: 10px;
+					font-size: 20px;
+					line-height: 1.45;
+				}
+			}
+		}
+
+		.partners {
+			margin-top: 0;
+			margin-bottom: 320px;
+
+			&__title {
+				margin-top: 0;
+				text-align: center;
+			}
+
+			&__partners-all {
+				position: relative;
+				top: 425px;
+				text-align: center;
+			}
+
+			&__carousel {
+				margin-top: -125px;
+			}
+
+			.partners-all {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 40px;
+			}
+			.carousel-custom__nav-container {
+				display: inline-block;
+				vertical-align: middle
+			}
+		}
+
+		.carousel-custom {
+			@item-height: 158px;
+			&__item {
+				width: @item-height;
+				height: @item-height;
+			}
+			&__item-content {
+				width: @item-height;
+			}
+
+			&__item-text {
+				font-size: 14px;
+			}
+			&__logo-stripe {
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			&__cashback-value {
+				font-size: 24px;
+			}
+		}
+
+		.appeal {
+			@appeal-height: 379px;
+			height: @appeal-height;
+
+			&__hidden-content {
+				height: @appeal-height * 2;
+			}
+
+			&__hidden-content-inner {
+				padding-top: 95px;
+				height: @appeal-height;
+			}
+
+			&__title {
+				font-size: 40px;
+				line-height: 1.1;
+			}
+		}
+
+		.footer {
+			padding-top: 95px;
+			padding-bottom: 56px;
+
+			&__subtitle {
+				margin-bottom: 33px;
+				font-size: 24px;
+				line-height: 1.17;
+			}
+
+			&__description {
+				margin-bottom: 48px;
+				font-size: 26px;
+				line-height: 1.38;
+			}
+
+			&__card-wrap {
+				margin-bottom: 116px;
+				width: 100%;
+			}
+
+			&__card {
+				width: 100%;
+			}
+
+			&__form {
+				min-width: 280px;
+				margin-top: 0;
+				margin-bottom: 32px;
+			}
+		}
+
+		.footer-form {
+
+			&__dots-wrap {
+				width: 100%;
+				left: initial;
+				right: 0;
+				bottom: @footer-form__dots-wrap--height;
+				height: @footer-form__dots-wrap--height*1.7;
+
+				.footer-form__dots-path {
+					d: path('M 50 1 L 50 99');
+				}
+			}
+		}
+
+		.btn-vtb {
+			font-size: 16px;
+			padding: 22px 67px;
+
+			&__wrapper {
+				margin-top: 55px;
+				margin-bottom: 45px;
+			}
+		}
+
+		.path-response {
+
+			&__container {
+
+				&_main-list {
+					padding-bottom: @main-list__dots-wrap--height*1.4;
+					&_big {
+						padding-bottom: @main-list__dots-wrap--height*1.4;
+					}
+				}
+
+				&_footer-form {
+					padding-bottom: @footer-form__dots-wrap--height*1.7;
+				}
+
+			}
+		}
+
+	}
+
+	//xs -- template 320  -- res.460-
+	//@media (max-width: 460px) {
+	@media (max-width: 767px) {
+
+		.animated {
+			animation-name: n !important;
+			animation-duration: 0s !important;
+		}
+
+		.visibility {
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
+
+		.h1-title {
+			font-size: 30px;
+			line-height: 1.27;
+		}
+
+		.h2-title {
+			font-size: 30px;
+			line-height: 1.13;
+		}
+
+		.header {
+
+			&__subtitle {
+				font-size: 20px;
+				line-height: 1.25;
+			}
+		}
+
+		.potential {
+			text-align: center;
+			&__subtitle {
+				font-size: 20px;
+				line-height: 1.4;
+			}
+
+			&__description {
+				font-size: 18px;
+				line-height: 1.33;
+			}
+		}
+
+		.ecosystem {
+
+			&__title {
+				margin-top: 130px;
+			}
+
+			&__subtitle {
+				font-size: 20px;
+				line-height: 1.2;
+			}
+		}
+
+		.main-list {
+
+			&__item {
+
+			}
+
+			&__item-line {
+
+				&_big {
+					height: 190px;
+				}
+			}
+
+			.list-item {
+
+				&__title {
+					font-size: 18px;
+					line-height: 1.61;
+				}
+
+				&__text {
+					font-size: 14px;
+					line-height: 1.43;
+				}
+			}
+		}
+
+		.partners {
+			margin-bottom: 190px;
+
+			&__partners-all {
+				top: 230px;
+			}
+		}
+
+		.partners-all {
+			&__text {
+				font-size: 18px;
+				line-height: 2.22;
+			}
+
+			&__count {
+				font-size: 38px;
+				line-height: 1.05;
+			}
+		}
+
+		.carousel-custom {
+			@item-height: 110px;
+			&__item {
+				width: @item-height;
+				height: @item-height;
+				margin: 58px 0;
+			}
+			&__item-content {
+				width: @item-height;
+			}
+
+			&__item-text {
+				font-size: 9px;
+			}
+			&__logo-stripe {
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+
+			&__shadow-left,
+			&__shadow-right {
+				height: 225px;
+			}
+
+			&__cashback-value {
+				font-size: 15px;
+			}
+		}
+
+		.appeal {
+
+			&__hidden-content-inner {
+				padding-top: 195px;
+			}
+
+			&__title {
+				text-align: center;
+				font-size: 30px;
+				line-height: 1.13;
+			}
+		}
+
+		.footer {
+			padding-top: 40px;
+			text-align: center;
+
+			&__title {
+				text-align: center;
+			}
+
+			&__subtitle {
+				text-align: center;
+				font-size: 18px;
+				line-height: 2.78;
+			}
+
+			&__description {
+				text-align: center;
+				font-size: 18px;
+				line-height: 1.44;
+			}
+
+			&__text {
+				font-size: 18px;
+				line-height: 1.33;
+				text-align: left;
+			}
+
+			&__form {
+				display: inline-block;
+				text-align: center;
+			}
+
+			&__card-wrap {
+				width: initial;
+			}
+		}
+
+		.dots-path-js {
+
+		}
+	}
+
+	@media (max-width: 570px) {
+		.hide_570 {
+			display: none;
+		}
+	}
+
+	@media (max-width: 360px) {
+		.partners {
+			.partners-all {
+				margin-right: 0;
+			}
+		}
+
+		@media (max-width: 320px) {
+		}
+	}
+}
+

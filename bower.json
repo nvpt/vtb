@@ -1,0 +1,39 @@
+{
+  "name": "cl-tsp",
+  "description": "tsp-landing",
+  "main": "tsp.js",
+  "authors": [
+    "EvgeniyZ"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./lib",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.6",
+    "normalize-css": "4.2.0"
+  },
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "parallax.js": "^1.4.2",
+    "jquery-ui": "^1.12.0",
+    "jquery-validation": "^1.15.0",
+    "bootstrap-select": "^1.10.0",
+    "jquery.maskedinput": "^1.4.1",
+    "lightslider": "^1.1.5",
+    "suggestions.jquery": "16.6",
+    "jquery.inputmask": "^3.3.4",
+    "onepage-scroll": "^1.3.1",
+    "owl.carousel": "owl-carousel2#^2.2.1"
+  },
+  "resolutions": {
+    "jquery": "=2.1.4"
+  }
+}

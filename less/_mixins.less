@@ -1,0 +1,221 @@
+.clearfix() { //распорка
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+img.vertical-fix {
+  display: inline !important;
+  width: 0 !important;
+  height: 100% !important;
+  font-size: 0 !important;
+  opacity: 0 !important;
+}
+
+.vc {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.centered-wrapper {
+  display: table;
+  table-layout: fixed;
+}
+
+.centered-unit {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+}
+
+.no-decoration() { //убрать подчеркиание и аутлайны
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none !important;
+
+    &:focus {
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}
+
+.no-decoration(c; @text-color) { //убрать подчеркиание и аутлайны, задан цвет текста
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    outline: none;
+    color: @text-color;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+/*hover,focus,active*/
+.hfa(@color:@color-base) {
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: @color;
+  }
+}
+
+.hfa(bg; @bg-color) {
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: @bg-color;
+  }
+}
+
+.hfa(td; @td: none) {
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: @td;
+  }
+}
+
+.hfa(out; @out: none) {
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: @out;
+  }
+}
+
+.hfa(b1; @border-color: @color-base) {
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid @border-color;
+  }
+}
+
+.hfa(b2; @border-color: @color-base) {
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid @border-color;
+  }
+}
+
+/*END hover,focus,active*/
+
+.flex-centered() { //Флексовый контейнер с центрированием первых дочерних элементов
+  display: flex !important;
+  height: 100%;
+
+  & > * {
+    display: inline-block;
+    margin: auto;
+  }
+}
+
+.absolute(@top: 0; @left: 0; @width: 100%; @height: 100%) { //абсолютное позиционирование
+  position: absolute;
+  top: @top;
+  left: @left;
+  width: @width;
+  height: @height;
+}
+
+.absolute(right; @top: 0; @right: 0; @width: 100%; @height: 100%) { //абсолютное позиционирование справа
+  position: absolute;
+  top: @top;
+  left: initial;
+  right: @right;
+  width: @width;
+  height: @height;
+}
+
+/*Filter Blur*/
+.blur(@blur:3px) {
+  filter: blur(@blur); /* Someday, sigh ... */
+  -webkit-filter: blur(@blur); /* Prefixed CSS3 blur filters */
+  -moz-filter: blur(@blur);
+  -o-filter: blur(@blur);
+  -ms-filter: blur(@blur);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
+}
+
+/*Transition*/
+.transition(@time:0.3s) {
+  transition: all @time linear;
+}
+
+.transition-quick() {
+  transition: all 0.2s linear;
+}
+
+.transition-main() {
+  transition: all 0.3s linear;
+}
+
+.transition-low() {
+  transition: all 0.5s linear;
+}
+
+/*END Transition*/
+
+/*Border radius*/
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+/*End border radius*/
+
+.vh-centered() {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+
+}
+
+.v-centered() {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  position: absolute;
+
+}
+
+.h-centered() {
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  position: absolute;
+
+}
+
+//line-height
+.lh(@line-height) {
+  line-height: @line-height;
+}
